@@ -1,0 +1,40 @@
+# Platform and IDE-generated files
+.DS_Store
+.idea
+.project
+.pydevproject
+
+# Python-related ignores
+*.pyc
+*.pyo
+
+# Django-related ignores
+/agora.*
+/agora/settings/local.py
+/agora/settings/azure_storage.py
+celerybeat-schedule
+
+# Virtual environment folders
+.Python
+bin/
+include/
+lib/
+local/
+src/
+
+# Obsolete ignores
+*.xml
+*.log
+*.ipynb
+*.*~
+/static/
+static/thumb/*
+/static/thumb/*
+/nbproject/
+exchange/
+/static/img/logos/
+static/img/logos/*
+*.db
+application/__init__.py
+/media
+settings.json
