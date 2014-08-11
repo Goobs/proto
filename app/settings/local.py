@@ -15,7 +15,9 @@ DATABASES = {
     }
 }
 
-APPS = ()
+APPS = (
+    'app.accounts',
+)
 
 INSTALLED_APPS += APPS
 

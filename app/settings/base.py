@@ -40,7 +40,6 @@ INSTALLED_APPS = (
 
     # App
     'app',
-    'app.accounts',
 )
 
 MIDDLEWARE_CLASSES = (
