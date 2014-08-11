@@ -1,0 +1,10 @@
+{% extends 'mail/base.html' %}
+
+{% block content %}
+    <h4>Спасибо за регистрацию на AgoraB2B!</h4>
+    <p><b>Ваш логин:</b> {{ user.username }}</p>
+
+    <hr style="border: none; border-bottom: 1px solid #dedede;"/>
+
+    <p><i>Письмо сгенерировано автоматически, пожалуйста, не отвечайте на него.</i></p>
+{% endblock %}
