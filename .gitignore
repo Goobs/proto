@@ -9,9 +9,9 @@
 *.pyo
 
 # Django-related ignores
-/agora.*
-/agora/settings/local.py
-/agora/settings/azure_storage.py
+/app.*
+/app/settings/local.py
+/app/settings/azure_storage.py
 celerybeat-schedule
 
 # Virtual environment folders
@@ -31,10 +31,8 @@ src/
 static/thumb/*
 /static/thumb/*
 /nbproject/
-exchange/
 /static/img/logos/
 static/img/logos/*
 *.db
 application/__init__.py
 /media
-settings.json
