@@ -26,6 +26,13 @@ INSTALLED_APPS = (
     'django.contrib.formtools',
     'south',
     'crispy_forms',
+    'treeadmin',
+    'reversion',
+    'app.cms.templates',
+    'feincms',
+    'feincms.module.page',
+    'feincms.module.medialibrary',
+    'app.cms',
     # 'mptt',
     # 'treeadmin',
     # 'rest_framework',
@@ -85,6 +92,11 @@ MESSAGE_TAGS = {
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 DEFAULT_FROM_EMAIL = 'info@app.ru'
+
+SOUTH_MIGRATION_MODULES = {
+    'page': 'app.cms.migrate.page',
+    'medialibrary': 'app.cms.migrate.medialibrary',
+}
 
 LOGGING = {
     'version': 1,

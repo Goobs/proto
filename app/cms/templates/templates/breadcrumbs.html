@@ -1,0 +1,14 @@
+<ul class="breadcrumb">
+    {% for url, title in trail %}
+        {% if url %}
+        <li>
+            <a href="{{ url }}">{{ title }}</a>
+        </li>
+        {% else %}
+            <li class="active">
+                {{ title }}
+            </li>
+        {% endif %}
+
+    {% endfor %}
+</ul>

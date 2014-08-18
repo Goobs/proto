@@ -3,3 +3,6 @@ django-grappelli==2.5.3
 south
 django-crispy-forms
 pytz
+FeinCMS==1.9.1
+django-reversion
+django-treeadmin
