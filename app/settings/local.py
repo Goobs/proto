@@ -17,11 +17,16 @@ DATABASES = {
 
 APPS = (
     'app.accounts',
+    'app.landing',
+
 )
 
 INSTALLED_APPS += APPS
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+if 'app.accounts' in APPS:
+    AUTH_USER_MODEL = 'accounts.User'
 
 """ COCCOC " ""
 

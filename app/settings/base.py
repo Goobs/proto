@@ -24,27 +24,8 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'django.contrib.formtools',
-    'south',
     'crispy_forms',
-    'treeadmin',
-    'reversion',
-    'app.cms.templates',
-    'feincms',
-    'feincms.module.page',
-    'feincms.module.medialibrary',
-    'app.cms',
-    # 'mptt',
-    # 'treeadmin',
-    # 'rest_framework',
-    # 'djcelery',
-    # 'kombu.transport.django',
-    # 'reversion',
-    # 'sorl.thumbnail',
-    # 'thumbnail',
-    # 'storages',
-    # 'pragmatic',
-    # 'endless_pagination',
-
+    'waffle',
     # App
     'app',
 )
@@ -82,7 +63,6 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.request',
 )
 
-AUTH_USER_MODEL = 'accounts.User'
 BROKER_TRANSPORT = 'django'
 
 from django.contrib.messages import constants
@@ -92,11 +72,6 @@ MESSAGE_TAGS = {
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 DEFAULT_FROM_EMAIL = 'info@app.ru'
-
-SOUTH_MIGRATION_MODULES = {
-    'page': 'app.cms.migrate.page',
-    'medialibrary': 'app.cms.migrate.medialibrary',
-}
 
 LOGGING = {
     'version': 1,
@@ -126,13 +101,13 @@ LOGGING = {
             'class': 'django.utils.log.AdminEmailHandler'
         }
     },
-    # 'loggers': {
-    #     'agora.gateways.base': {
-    #         'handlers': ['console'],
-    #         'propagate': True,
-    #         'level': 'INFO'
-    #     }
-    # }
+    'loggers': {
+        'app.base': {
+            'handlers': ['console'],
+            'propagate': True,
+            'level': 'INFO'
+        }
+    }
 }
 
 CACHES = {

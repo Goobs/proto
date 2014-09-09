@@ -6,7 +6,7 @@ from django.contrib.auth.views import password_reset, password_reset_confirm
 from django.shortcuts import redirect
 from django.core.urlresolvers import reverse
 from django.views.generic import *
-from app.utils.mail import send_mail
+from app.utils.mail import send_mail as app_send_mail
 from .forms import *
 
 
@@ -114,7 +114,7 @@ class RegistrationView(TemplateView):
         if self.user_form.is_valid():
             user = self.user_form.save(commit=False)
             try:
-                send_mail(subject=u'Регистрация на сайте APP',
+                app_send_mail(subject=u'Регистрация на сайте APP',
                           to=user.email,
                           template='mail/success_registration.html',
                           context={'user': user})

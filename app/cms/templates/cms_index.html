@@ -1,9 +1,0 @@
-{% extends 'base.html' %}
-{% load feincms_tags %}
-
-{% block title %}{{ feincms_page.title }}{% endblock %}
-
-{% block content %}
-    {% feincms_render_region feincms_page 'main' request %}
-{% endblock %}
-
