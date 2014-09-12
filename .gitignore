@@ -27,6 +27,7 @@ src/
 *.log
 *.ipynb
 *.*~
+*.zip
 /static/
 static/thumb/*
 /static/thumb/*
