@@ -12,6 +12,7 @@ urlpatterns = patterns(
     '',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^grappelli/', include('grappelli.urls')),
+    url(r'^robokassa/', include('robokassa.urls')),
 )
 
 for app in settings.APPS:

@@ -5,6 +5,13 @@
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
+{% for message in messages %}
+<br/>
+<div{% if message.tags %} class="alert alert-{{ message.tags }}"{% endif %}>
+    <a href="#" class="close" data-dismiss="alert">&times;</a>
+    {{ message }}
+</div>
+{% endfor %}
 {% block content %}{% endblock %}
 </body>
 </html>

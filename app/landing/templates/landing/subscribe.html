@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}{% endblock %}
+
+{% block content %}
+    <form action="{{ form.target }}" method="POST">
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-warning">
+            Оплатить
+        </button>
+    </form>
+{% endblock %}

@@ -1,7 +1,12 @@
 {% extends 'landing/base.html' %}
+{% load crispy_forms_tags %}
 
 {% block title %}{% endblock %}
 
 {% block content %}
-<a href="{% url 'subscribe' %}">Call to action</a>
+    <div class="jumbotron">
+        <h1>Эвент, еба</h1>
+    </div>
+
+{% crispy form %}
 {% endblock %}

@@ -6,6 +6,6 @@ from .views import *
 
 urlpatterns = patterns(
     '',
-    url(r'^$', TemplateView.as_view(template_name='landing/index.html'), name='index'),
+    url(r'^$', IndexView.as_view(), name='index'),
     url(r'^subscribe/?$', SubscribeView.as_view(), name='subscribe'),
 )

@@ -26,6 +26,7 @@ INSTALLED_APPS = (
     'django.contrib.formtools',
     'crispy_forms',
     'waffle',
+    'robokassa',
     # App
     'app',
 )

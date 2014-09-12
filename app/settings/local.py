@@ -28,6 +28,11 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 if 'app.accounts' in APPS:
     AUTH_USER_MODEL = 'accounts.User'
 
+ROBOKASSA_LOGIN = 'othercamp'
+ROBOKASSA_PASSWORD1 = 'otherpass1'
+ROBOKASSA_PASSWORD2 = 'otherpass2'
+ROBOKASSA_TEST_MODE = True
+
 """ COCCOC " ""
 
 LANGUAGE_CODE = 'en'
